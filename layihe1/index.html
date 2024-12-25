@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nullstyle.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <svg style="display: none">
+      <symbol id="logo-dark" viewBox="0 0 97 25">
+        <path
+          d="M20.852 25V20.14H5.84V15.28H20.312V10.456H5.84V5.74H20.852V0.879999H0.44V25H20.852ZM28.6916 25V0.879999H23.2916V25H28.6916ZM36.9181 5.128V0.879999H31.5181V5.128H36.9181ZM36.9181 25V6.964H31.5181V25H36.9181ZM44.6767 25L49.3207 18.952H49.6087L54.3967 25H60.9847L53.7847 16.108V15.784L60.9847 6.964H54.4687L49.8247 13.048H49.5367L44.7487 6.964H38.1607L45.3607 15.892V16.18L38.1607 25H44.6767ZM67.6798 5.128V0.879999H62.2798V5.128H67.6798ZM67.6798 25V6.964H62.2798V25H67.6798ZM75.9064 25V14.56C75.9064 12.292 76.7704 11.176 79.1824 11.176C81.3784 11.176 82.1704 12.04 82.1704 14.02V15.892H87.5704V12.904C87.5704 9.376 85.9144 6.604 81.8824 6.604C78.2464 6.604 76.3384 8.836 75.8344 11.752H75.5104V6.964H70.5064V25H75.9064Z"
+          fill="#202636" />
+        <path d="M96.1139 25V18.7H89.1659V25H96.1139Z" fill="#375EC1" />
+      </symbol>
+      <symbol id="logo-white" viewBox="0 0 97 25">
+        <path
+          d="M20.852 25V20.14H5.84V15.28H20.312V10.456H5.84V5.74H20.852V0.879999H0.44V25H20.852ZM28.6916 25V0.879999H23.2916V25H28.6916ZM36.9181 5.128V0.879999H31.5181V5.128H36.9181ZM36.9181 25V6.964H31.5181V25H36.9181ZM44.6767 25L49.3207 18.952H49.6087L54.3967 25H60.9847L53.7847 16.108V15.784L60.9847 6.964H54.4687L49.8247 13.048H49.5367L44.7487 6.964H38.1607L45.3607 15.892V16.18L38.1607 25H44.6767ZM67.6798 5.128V0.879999H62.2798V5.128H67.6798ZM67.6798 25V6.964H62.2798V25H67.6798ZM75.9064 25V14.56C75.9064 12.292 76.7704 11.176 79.1824 11.176C81.3784 11.176 82.1704 12.04 82.1704 14.02V15.892H87.5704V12.904C87.5704 9.376 85.9144 6.604 81.8824 6.604C78.2464 6.604 76.3384 8.836 75.8344 11.752H75.5104V6.964H70.5064V25H75.9064Z"
+          fill="white" />
+        <path d="M96.1139 25V18.7H89.1659V25H96.1139Z" fill="#375EC1" />
+      </symbol>
+    </svg>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <svg class="logo-dark">
+            <use xlink:href="#logo-dark"></use>
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+          <a href="" class="btn btn-brand text-white ms-lg-3">DOWNLOAD</a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="home-title text-white">WELCOME TO ELIXIR</div>
+        <div class="home-subtitle text-white mb-3">
+          WE ARE TEAM OF TALENTED DESIGNERS MAKING WEBSITES WITH BOOTSTRAP
+        </div>
+        <div class="d-flex align-items-center justify-content-between gap-3">
+          <div class="btn btn-brand text-white">GET STARTED</div>
+          <div class="btn btn-white">OUR PORTFOLIO</div>
+        </div>
+      </div>
+    </section>
+    <!-- Home END -->
+
+    <!-- About -->
+    <section id="about" class="section-padding border-bottom">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">About us</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="img/about.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start p-lg-5 gap-3">
+            <div class="about__title-2">About Elixir</div>
+            <p class="section-subtitle text-secondary mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo reiciendis ad.
+            </p>
+            <div class="d-flex gap-3 mb-4">
+              <div class="iconbox">
+                <i class="ri-mail-send-fill"></i>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="item-title">We are Awesome</div>
+                <div class="section-subtitle text-secondary">
+                  Consectetur adipisicing elit. Corporis nesciunt aut temporibus!
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <div class="iconbox">
+                <i class="ri-user-5-fill"></i>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="item-title">We are Awesome</div>
+                <div class="section-subtitle text-secondary">
+                  Consectetur adipisicing elit. Corporis nesciunt aut temporibus!
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="iconbox">
+                <i class="ri-rocket-2-fill"></i>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="item-title">We are Awesome</div>
+                <div class="section-subtitle text-secondary">
+                  Consectetur adipisicing elit. Corporis nesciunt aut temporibus!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About END -->
+
+    <!-- Awesome Services -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">Awesome Services</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row g-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-pen-nib-fill"></i>
+                </div>
+                <div class="item-title">UX Design</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-stack-fill"></i>
+                </div>
+                <div class="item-title">UI Design</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-ruler-2-fill"></i>
+                </div>
+                <div class="item-title">UX Design</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-pie-chart-2-fill"></i>
+                </div>
+                <div class="item-title">Digital Marketing</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-code-box-line"></i>
+                </div>
+                <div class="item-title">Machine Learning</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="service-card theme-shadow p-5">
+              <div
+                class="service-card__inner d-flex flex-column justify-content-center align-items-center text-center gap-3">
+                <div class="iconbox">
+                  <i class="ri-user-2-fill"></i>
+                </div>
+                <div class="item-title">UX Design</div>
+                <div class="section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat sunt distinctio?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Awesome Services END -->
+
+    <!-- Counter -->
+    <div id="counter" class="counter section-padding">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <div class="counter-card">
+            <div class="counter__num text-white">90,00+</div>
+            <div class="counter__text text-white">Total Downloads</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter__num text-white">58k+</div>
+            <div class="counter__text text-white">Trusted Clients</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter__num text-white">5M+</div>
+            <div class="counter__text text-white">Themes Designed</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter__num text-white">100+</div>
+            <div class="counter__text text-white">Team Members</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter END -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">Our Portfolio</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="img/project-1.jpg" data-fancybox="gallery" class="image">
+              <div class="lb-wrapper mb-4">
+                <div class="lb lb-1"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+            <a href="img/project-2.jpg" data-fancybox="gallery" class="image">
+              <div class="sb-wrapper">
+                <div class="sb sb-1"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="img/project-4.jpg" data-fancybox="gallery" class="image">
+              <div class="sb-wrapper mb-4">
+                <div class="sb sb-2"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+            <a href="img/project-3.jpg" data-fancybox="gallery" class="image">
+              <div class="lb-wrapper">
+                <div class="lb lb-2"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="img/project-5.jpg" data-fancybox="gallery" class="image">
+              <div class="lb-wrapper mb-4">
+                <div class="lb lb-3"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+            <a href="img/project-6.jpg" data-fancybox="gallery" class="image">
+              <div class="sb-wrapper">
+                <div class="sb sb-3"></div>
+              </div>
+              <div class="iconbox">
+                <i class="ri-search-2-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio END -->
+
+    <!-- Reviews -->
+    <section id="reviews" class="reviews section-padding">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">Testimonials</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-1.jpg" class="avatar" alt="" />
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-2.jpg" class="avatar" alt="" />
+
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-3.jpg" class="avatar" alt="" />
+
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-4.jpg" class="avatar" alt="" />
+
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-5.jpg" class="avatar" alt="" />
+
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="review d-flex flex-column bg-white gap-1 p-4 mb-4">
+              <div class="text-warning">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p>
+                Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit
+                dicta voluptatem.
+              </p>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <img src="img/avatar-6.jpg" class="avatar" alt="" />
+
+              <div class="d-flex flex-column gap-1">
+                <div class="item-title">Dianne Russell</div>
+                <div class="review-subtitle">UX Architect</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews END -->
+
+    <!-- Team -->
+    <section id="team" class="section-padding">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">Team Members</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="img-box">
+              <div class="person">
+                <img src="img/person-1.jpg" alt="" class="person-img" />
+              </div>
+              <div class="img-box-info text-white">
+                <div class="info-name">John Doe</div>
+                <div class="info-job">Webflow Artist</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="img-box">
+              <div class="person">
+                <img src="img/person-2.jpg" alt="" class="person-img" />
+              </div>
+              <div class="img-box-info text-white">
+                <div class="info-name">John Doe</div>
+                <div class="info-job">Webflow Artist</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="img-box">
+              <div class="person">
+                <img src="img/person-3.jpg" alt="" class="person-img" />
+              </div>
+              <div class="img-box-info text-white">
+                <div class="info-name">John Doe</div>
+                <div class="info-job">Webflow Artist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team END -->
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-padding bg-light">
+      <div class="container position-relative z-3">
+        <div
+          class="section-header text-white mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title-2 mb-5">Gete in touch</div>
+          <p class="section-subtitle">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="Enter first name" />
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="Enter last name" />
+              </div>
+              <div class="form-group col-lg-12">
+                <input type="email" class="form-control" placeholder="Enter Email address" />
+              </div>
+              <div class="form-group col-lg-12">
+                <input type="text" class="form-control" placeholder="Enter subject" />
+              </div>
+              <div class="form-group col-lg-12">
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Enter Message"
+                  style="height: 181px"></textarea>
+              </div>
+              <div class="form-group col-lg-12 d-grid">
+                <button class="btn btn-brand text-white">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact END -->
+
+    <!-- Blog -->
+    <section id="blog" class="section-padding">
+      <div class="container">
+        <div class="section-header mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="section-title mb-5">Recent News & Articles</div>
+          <p class="section-subtitle text-secondary">
+            We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3">
+            <div class="article-img-wrapper">
+              <img src="img/blog-post-1.jpg" alt="" class="article-img" />
+            </div>
+            <div class="item-title">Web Design 2022</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi quos magni!</p>
+            <a href="">Read More</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3">
+            <div class="article-img-wrapper">
+              <img src="img/blog-post-2.jpg" alt="" class="article-img" />
+            </div>
+            <div class="item-title">Web Design 2022</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi quos magni!</p>
+            <a href="">Read More</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3">
+            <div class="article-img-wrapper">
+              <img src="img/blog-post-3.jpg" alt="" class="article-img" />
+            </div>
+            <div class="item-title">Web Design 2022</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi quos magni!</p>
+            <a href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog END -->
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  </body>
+</html>

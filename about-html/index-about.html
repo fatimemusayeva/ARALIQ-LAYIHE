@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header>
+        <div class="header-menu">          
+            <p class="logo"><b>WEB CRAFT</b></p>
+            <a class="menu"  href="../index.html">Ana səhifə</a>
+            <a class="menu" href="#">Haqqımızda</a>
+            <a class="menu" href="../portfolio/portfolio-index.html">Portfolio</a>
+            <a class="menu" href="../demo-index/demo-index.html">Domen</a>
+            <a class="menu" href="../calculation-html/calculation-index.html">Qiymət təklifi al</a>
+           <div id="price"> <a  href="../contact-html/index-contact.html">Əlaqə</a></div>
+           <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        </div> <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Ana səhifə</a>
+            <a href="#about">Haqqımızda</a>
+            <a href="../portfolio/portfolio-index.html">Portfolio</a>
+            <a href="../demo-index/demo-index.html">Domen</a>
+            <a href="../calculation-html/calculation-index.html">Qiymət təklifi al</a>
+            <a href="../contact-html/index-contact.html">Əlaqə</a>
+    
+            </div>
+        <hr style="background-color: #074c90; height: 2px;">
+
+        <div class="header-2">
+            <div class="header2-card">
+                <div class="headerCard-about">
+                <h2>Fəaliyyətimiz haqqında</h2>
+                <p>15 ildir ki, fasiləsiz olaraq yalnız vebsaytların hazırlanması və proqramlaşdırma həllərinə 
+                    fokuslanmış şirkətimiz müştərilərimizə innovativ və keyfiyyətli 
+                    həllər təqdim edir. Bizim əsas məqsədimiz hər bir layihəni özəl 
+                    yanaşma ilə həyata keçirərək, müştəri məmnuniyyətini təmin etməkdir.</p>
+                </div>
+                    <img src="./about-img/interior-design-office1.jpg">
+            </div>
+        </div>
+        </header>
+
+        
+        <main>
+
+       
+
+            <div class="timeline-container">
+                <h2 class="timeline-title">Zamanı Xəttə Çevir!</h2>
+                <p class="timeline-slogan">Keçmişdən gələcəyə doğru addım-addım irəliləyiş!</p>
+                <div class="timeline">
+                    <div class="timeline-point" onclick="showDetails(0)">
+                        <div class="point-circle"></div>
+                        <span class="year">2005</span>
+                    </div>
+                    <div class="timeline-point" onclick="showDetails(1)">
+                        <div class="point-circle"></div>
+                        <span class="year">2010</span>
+                    </div>
+                    <div class="timeline-point" onclick="showDetails(2)">
+                        <div class="point-circle"></div>
+                        <span class="year">2015</span>
+                    </div>
+                    <div class="timeline-point" onclick="showDetails(3)">
+                        <div class="point-circle"></div>
+                        <span class="year">2020</span>
+                    </div>
+                </div>
+                <div class="timeline-details hidden" id="detail0">
+                    <p>2005 - Şirkət təsis olundu.</p>
+                </div>
+                <div class="timeline-details hidden" id="detail1">
+                    <p>2010 - İlk xidmətlər təqdim edilməyə başlandı.</p>
+                </div>
+                <div class="timeline-details hidden" id="detail2">
+                    <p>2015 - Şirkət beynəlxalq bazarda inkişaf etməyə başladı.</p>
+                </div>
+                <div class="timeline-details hidden" id="detail3">
+                    <p>2020 - Dünyada ən çox istifadə edilən platformalardan biri oldu.</p>
+                </div>
+            </div>
+            
+            
+           <section>
+    <div class="section-5">
+           <h2 class="section5-header">Biz sizə nə təklif edirik ?</h2>
+         <div class="section5-Cards">
+            <div class="section5-card">
+                <img src="./about-img/Team.png">
+                <h2>Peşəkar Komanda</h2>
+                <p>Komandamızın hər bir üzvü öz sahəsində təcrübəli və peşəkardır. 
+                    Biz, sizin layihənizin hər mərhələsində ən yaxşı nəticələri təmin etmək üçün çalışırıq.
+                     Məqsədimiz sizin biznesiniz üçün mükəmməl və dayanıqlı həllər yaratmaqdır.</p>
+            </div>
+            <div class="card-yellow" class="section5-card">
+                <img src="./about-img/Website.png">
+                <h2>Unikal Dizayn</h2>
+                <p>Hər bir layihə üçün tam fərqli və yaradıcı dizaynlar hazırlayırıq. Saytınız təkcə gözəl görünməklə qalmır,
+                     həm də istifadəçi dostu olur. Bu, sizin müştərilərinizin diqqətini çəkməyə və onları cəlb etməyə kömək edəcək.</p>
+            </div>
+            <div class="section5-card">
+                <img src="./about-img/smm.png">
+                <h2>Əlçatan Qiymətlər</h2>
+                <p>Biz keyfiyyətli xidmətləri münasib qiymətlərlə təqdim edirik. Layihənizin miqyasından asılı olmayaraq,
+                     büdcənizə uyğun həllər təklif edirik. Keyfiyyətdən güzəşt etmədən sərfəli qiymətlərlə fərqlənirik.</p>
+            </div>
+            <div class="card-yellow"  class="section5-card">
+                <img src="./about-img/DesktopApplication.png">
+                <h2>Mobil Uyğunluq</h2>
+                <p>Hazırladığımız saytlar tamamilə mobil cihazlar üçün optimallaşdırılmışdır. Bu, istifadəçilərinizə istənilən cihazdan rahat
+                     girişi təmin edir. Həm sürət, həm də rahatlıq baxımından yüksək standartlara zəmanət veririk.</p>
+            </div>
+            <div class="section5-card">
+                <img src="./about-img/technical.png">
+                <h2>Texniki Dəstək</h2>
+                <p>Saytınız istifadəyə verildikdən sonra sizi tək qoymuruq. Daim texniki dəstək göstərərək, problemlərinizi tez 
+                    bir zamanda həll edirik. Bu, saytınızın hər zaman sabit və etibarlı işləməsini təmin edir.</p>
+            </div>
+         </div>
+        </div>
+    </section>
+        
+<section>
+        <div class="workers-about">
+        <h2>İşimizin mütəxəssisləri</h2>
+        <div class="section-worker">
+            <div class="workers">
+                <div class="worker">
+                    <img src="./about-img/person-Developer1.jpg" alt="Aytac Hüseynova">
+                    <div class="worker-about">
+                        <h2>Orxan İsmayılov</h2>
+                        <h3>Layihə Meneceri</h3>
+                        <p>10 illik təcrübə. Orxan İsmayılov komandanın iş prosesini effektiv şəkildə idarə edir və əlaqələri koordinasiya edir.</p>
+                    </div>
+                </div>
+                <div class="worker">
+                    <img src="./about-img/nergiz-foto.jpg" alt="Orxan İsmayılov">
+                    <div class="worker-about">
+                        <h2>Nərgiz Sadıqova</h2>
+                        <h3>UI/UX Dizayner</h3>
+                        <p>5 illik təcrübə. Nərgiz Sadıqova müasir dizayn standartlarını tətbiq edərək, müştəri tələblərinə uyğun veb interfeyslər hazırlayır.</p>
+                    </div>
+                    
+                </div>
+                <div class="worker">
+                    <img src="./about-img/person-Developer2.jpg" alt="Elçin Məmmədov">
+                    <div class="worker-about">
+                        <h2>Elçin Məmmədov</h2>
+                        <h3>Full-Stack Proqramçı</h3>
+                        <p>8 illik təcrübə. Elçin Məmmədov arxa və ön hissə proqramlaşdırmasında mükəmməl təcrübəyə malikdir.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section>
+    <div class="comment">
+        <div class="comment-card">
+            <div class="commentCard-about">
+            <h2>Müştəri məmnuniyyəti</h2>
+            <p>200-dən çox korporativ müştərinin seçimi olmaqdan qürur duyuruq! Hər bir müştərimizin markasını özümüzünkülə bərabər görür, onların uğur hekayələrinə töhfə 
+                verməyi hədəfləyirik. Etibarlılıq, keyfiyyət və innovasiya prinsiplərinə sadiq qalaraq biznesinizin inkişafı üçün yanınızdayıq. </p>
+            </div>
+              
+                <img src="about-img/3d-speech-bubbles-with-gold-rating-stars.jpg">
+        </div>
+    </div>
+</section>
+
+
+<section>
+<div class="section-opinion">
+    <h3>Müştərilərimizin <span>müsbət</span> rəyləri</h3>
+    <div class="opinions">
+    <div class="opinion">
+        <div class="client">
+        <img class="opinion-client" src="./about-img/woman1.jpg">
+        <h2>Aytac Qurbanov</h2></div>
+        <p>Web Craft şirkəti ilə əməkdaşlığımız artıq 5 ildir ki, davam edir. Bu müddət ərzində şirkət bizə nəinki sayt məsələləri ilə
+             bağlı, həm də digər məsələlərdə köməkliyini əsirgəməyib. Bizə göstərdiyi bu diqqət və hörmətə görə şirkətin rəhbərliyi və əməkdaşlarına öz 
+            şirkətimiz adından minnətdarlığımızı bildiririk və Okmedia şirkətinə gələcək işlərində uğurlar diləyirik.</p>
+            <div class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                
+          
+            </div>
+    </div>
+    <div class="opinion">
+        <img class="opinion-client" src="./about-img/man1.jpg">
+        <h2>Elşən Əhmədov</h2>
+        <p>Web craft xidmət göstərdikləri sahələr üzrə ixtisaslaşmış, bir qrup yüksək səviyyəli mütəxəssislərin fəaliyyəti ilə təqdim 
+            olunan işləri uğurla sona çatdırmışdır. Şirkət zəngin peşəkar biliklər və təcrübə sayəsində müştəri məmnuniyyəti prinsipini önə sürərək Alfa İnşaat şirkəti üçün böyük əhəmiyyət kəsb edən faydalı və geniş çeşidli xidmət göstərmişdir.
+             Eyni zamanda qiymətlərinin münasibliyinə görə fərqlənən bu şirkət operativliyi ilə xüsusi ilə fərqlənir. </p>
+             <div class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+
+            </div>
+    </div>
+    <div class="opinion">
+        <img class="opinion-client" src="./about-img/man2.jpg">
+        <h2>Niyazi Musayev</h2>
+        <p>Biz "Metas" MMC olaraq avtomobillərin buxarlı təmizliyi ilə məşğuluq. 2014-cü ildə Web Craft nümayəndəsi ilə tanış olduq. Onlar bizim üçün çox münasib qiymətə www.metas.az saytını yığdılar. Bir müddət sonra saytımız 
+            MilliNet müsabiqəsində 2015-ci ilin ən yaxşı saytları içində 3-cü yeri tutdu. Çox operativ, effektli iş görürlər. İşçi qrupunun bizə münasibəti, hər an kömək 
+            etməyə hazır olmaq xüsusiyyətləri təqdirə layiqdir. Hamıya məsləhət bilirəm.</p>
+            <div class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+            </div>
+    </div>
+    <div class="opinion">
+        <img class="opinion-client" src="./about-img/man3.jpg">
+        <h2>Sadiq Bəkirov</h2>
+        <p>
+            Direktor, «Jalali Tədris mərkəzi »
+            "Web Craft" müştəri məmnuniyyəti anlayışını rəsmən tərənnüm edən, təcili yardım obrazı ilə müştərilərin kaprizlərini qarşılayan çox məmnunedici bir qrupdur. Hər sahədə iş partnyorlarımız 
+            işinə bu qədər məsuliyyətlə, demirəm hələ bu qədər peşəkarlıqla yanaşsalar stresslərimiz yarı yarıya azalar.</p>
+            <div  class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+            </div>
+    </div>
+    <div class="opinion">
+        <img class="opinion-client" src="./about-img/woman2.jpg">
+        <h2>Sevda Hacıbəyli</h2>
+        <p>Web craft şirkəti ilə uzun müddətli əməkdaşlığımız var, APFM-in ilk rəsmi internet saytı bu şirkətin mütəxəssisləri tərəfindən hazırlanmışdı. Bu yaxınlarda isə saytımızı yeniləmək qərarına gəldik və yenidən onlara müraciət etdik və qısa bir zamanda bizə müasir, cəlbedici və stil baxımından 
+            çox maraqlı versiyalarda müxtəlif təkliflər təqdim olundu. Hazırlıq prosesi də razılaşdırılmış vaxtdan az vaxt apardı. </p>
+            <div class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+            </div>
+    </div>
+    <div class="opinion">
+        <img class="opinion-client" src="./about-img/man4.jpg">
+        <h2>Zamir Umudov</h2>
+        <p> 2014-cü ildə www.WebCraft.az saytına müştəri olaraq müraciət etdim. Çox qısa zamanda, hardasa bir neçə günə, münasib qiymətə mənim üçün istədiyim kimi sayt yığıldı.
+             Heç yorulmadan, bezmədən, incitmədən və uzatmadan saytım ərsəyə gəldi. Həmçinin saytım 2015-ci ildə NETTY-nin qalibi də oldu. </p>
+             <div class="stars">
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+                <img src="./about-img/star(1).png"></img>
+            </div>
+    </div>
+   </div>
+
+
+   </div>
+</section>
+
+
+
+
+        </main>
+
+<footer>
+    <div class="footer">
+         <div class="footer-list">
+
+        <div class="footer-card1">
+        <h2>Web Craft</h2>
+        <ul>
+             <li>Ana səhifə</li>
+             <li>Haqqımızda</li>
+             <li>Portfolio</li>
+             <li>Bloq</li>
+             <li>Xidmətlərimiz</li>
+        </ul>
+    </div>
+        
+        <div class="footer-card1" id="footer-card2"> 
+        <h2>Həllər</h2>
+        <ul>
+             <li>Vebsaytların hazırlanması</li>
+             <li>Vebsaytların texniki dəstək</li>
+             <li>Korporotiv mail</li>
+             <li>Logo yaradılması</li>
+             <li>Ödəmə sistemlərinin inteqrasiyası</li>
+        </ul>
+        </div>
+
+        <div class="footer-card1" id="footer-card2"> 
+            <h2>Təkliflərimiz</h2>
+            <ul>
+                 <li>Peşəkar Komanda</li>
+                 <li>Unikal Dizayn</li>
+                 <li>Əlçatan Qiymətlər</li>
+                 <li>Mobil Uyğunluq</li>
+                 <li>Texniki Dəstək</li>
+            </ul>
+            </div>
+
+        <div class="footer-contact1">
+         <div class="telephone"> <img src="./about-img/Location.png"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
+         <div class="location">  <img src="./about-img/Telephone.png"> <h2>(050) 500 50 50</h2></div>
+        </div>
+
+
+
+      </div>
+
+
+        <div></div>
+        
+    </div>
+</footer> 
+
+
+<script src="about.js"></script>
+     
+        </body>
+        </html>

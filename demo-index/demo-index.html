@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domen Axtar</title>
+    <link rel="stylesheet" href="demo-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-menu">          
+            <p class="logo"><b>WEB CRAFT</b></p>
+            <a class="menu"  href="../index.html">Ana səhifə</a>
+            <a class="menu" href="../about-html/index-about.html">Haqqımızda</a>
+            <a class="menu" href="../portfolio/portfolio-index.html">Portfolio</a>
+            <a class="menu" href="../demo-index/demo-index.html">Domen</a>
+            <a class="menu" href="../calculation-html/calculation-index.html">Qiymət təklifi al</a>
+           <div id="price"> <a  href="../contact-html/index-contact.html">Əlaqə</a></div>
+
+           <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="../index.html">Ana səhifə</a>
+        <a href="../about-html/index-about.html">Haqqımızda</a>
+        <a href="../portfolio/portfolio-index.html">Portfolio</a>
+        <a href="#contact">Domen</a>
+        <a href="../calculation-html/calculation-index.html">Qiymet təklifi al</a>
+        <a href="../contact-html/index-contact.html">Əlaqə</a>
+
+    </div>
+     
+      <hr style="background-color: #074c90; height: 2px;">
+
+        </header>
+        
+
+<div class="container">
+    <h1 class="title">"Domen Adınızı Buradan Sifariş Edin və Onlayn Varlığınızı Qurun!"</h1>
+    <p class="description">
+        "İnternet üzərindəki varlığınızı təmsil edən ideal domen adını tapın! Bizim geniş domen 
+        seçimi ilə işinizi yeni bir səviyyəyə qaldırın. Sadəcə istədiyiniz domen adını və uzantısını seçin,
+         biz də qalanını həll edək. Domenlərinizi indi yoxlayın və sifariş edin!"
+
+ 
+    </p>
+
+    
+
+     <div class="search-box">
+        <input type="text" id="domainInput" placeholder="İstədiyiniz domen adını daxil edin">
+        <select id="extensionSelect">
+            <option value=".az">.az</option>
+            <option value=".com">.com</option>
+            <option value=".net">.net</option>
+            <option value=".org">.org</option>
+            <option value=".info">.info</option>
+            <option value=".biz">.biz</option>
+            <option value=".us">.us</option>
+        </select>
+        <button class="search-btn" onclick="searchDomain()">Axtar</button>
+    </div>
+    
+    <div id="result"></div>
+    
+    <div id="packageSelection" style="display:none;"></div>
+    
+    <div id="selected-info" style="display:none;">
+        <h3>Seçilmiş Paket:</h3>
+        <p id="selected-domain"></p>
+        <p id="total-price"></p>
+        <p id="expiry-date"></p>
+        <a id="contact-button" href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
+        
+    </div>
+    
+
+
+     
+
+    <div class="popular-domains">
+        <span>.az <span class="price">₼40/il</span></span>
+        <span>.com <span class="price">₼50/il</span></span>
+        <span>.net <span class="price">₼45/il</span></span>
+        <span>.info <span class="price">₼30/il</span></span>
+        <span>.biz <span class="price">₼35/il</span></span>
+        <span>.org <span class="price">₼40/il</span></span>
+    </div>
+
+    <div id="result" class="notification"></div>
+
+</div>
+
+
+
+
+
+<div class="faq-container">
+    <h2 class="faq-header">Domen Haqqında Tez-tez Verilən Suallar</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">1. Domen nədir?</button>
+        <div class="faq-answer">
+            <p>Domen, internetdə müəyyən bir vebsaytı tapmaq üçün istifadə olunan unikal bir adıdır. Domen adları, vebsaytlara girişi asanlaşdırır və IP ünvanları ilə əlaqəli olan yerləşdirilmə məlumatlarını idarə edir.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">2. Domen adını necə qeydiyyatdan keçirə bilərəm?</button>
+        <div class="faq-answer">
+            <p>Domen adı qeydiyyatdan keçirilməsi üçün müvafiq bir domen qeydiyyat şirkəti seçərək orada adı qeydiyyata almalı və müvafiq ödənişi etməlisiniz. Qeydiyyat prosesi bir neçə dəqiqə sürə bilər.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">3. Bir domen adının qeydiyyata alınması nə qədər vaxt aparır?</button>
+        <div class="faq-answer">
+            <p>Domen adı qeydiyyat prosesi ümumiyyətlə 5-10 dəqiqə ərzində tamamlanır. Lakin bəzən əlavə yoxlamalar və ya təsdiqləmə mərhələləri səbəbindən bir neçə saat çəkə bilər.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">4. Mövcud domenimi şirkətinizə köçürə bilərəmmi?</button>
+        <div class="faq-answer">
+            <p>Bəli, mövcud domenlərinizi bizə köçürmək mümkündür. Köçürmə prosesi müəyyən bir müddət ala bilər və sənədlərin doğru olması tələb olunur.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">5. Domen məxfiliyinin qorunması nədir?</button>
+        <div class="faq-answer">
+            <p>Domen məxfiliyinin qorunması, domen sahibi haqqında məlumatların gizli saxlanılmasıdır. Bu xidmət ilə digər şəxslər domen sahibinin əlaqə məlumatlarını görməyəcək.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">6. Domenimin DNS parametrlərini dəyişdirə bilərəmmi?</button>
+        <div class="faq-answer">
+            <p>Bəli, domeninizin DNS parametrlərini dəyişdirmək mümkündür. Bunun üçün sizin domen qeydiyyatçınızın idarə panelindən DNS idarəsi etməyiniz kifayətdir.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="pricing-container">
+    <h2 class="pricing-header">Domen Qiymətləri və Paket Təklifləri</h2>
+  
+    <div class="pricing-box">
+      <div class="pricing-option" id="basic">
+        <h3 class="pricing-title">Basic Paket</h3>
+        <p class="pricing-price">60 AZN / İL</p>
+        <ul class="pricing-features">
+          <li>1 Domen Adı</li>
+          <li>İnternetə Yönləndirmə</li>
+          <li>1 İstifadəçi</li>
+          <li>DNS Dəstəyi</li>
+        </ul>
+        <button class="btn-select1" onclick="selectPackaget('Basic')">Seç</button>
+      </div>
+  
+      <div class="pricing-option" id="standard">
+        <h3 class="pricing-title">Standart Paket</h3>
+        <p class="pricing-price">80 AZN / İL</p>
+        <ul class="pricing-features">
+          <li>3 Domen Adı</li>
+          <li>İnternetə Yönləndirmə</li>
+          <li>3 İstifadəçi</li>
+          <li>DNS Dəstəyi</li>
+          <li>SSL Sertifikatı</li>
+        </ul>
+        <button class="btn-select2" onclick="selectPackaget('Standard')">Seç</button>
+      </div>
+  
+      <div class="pricing-option" id="premium">
+        <h3 class="pricing-title">Premium Paket</h3>
+        <p class="pricing-price">110 AZN / İL</p>
+        <ul class="pricing-features">
+          <li>Özəl Domen Adı</li>
+          <li>İnternetə Yönləndirmə</li>
+          <li>Illik Trafik Xidməti</li>
+          <li>DNS Dəstəyi</li>
+          <li>SSL Sertifikatı</li>
+          <li>24/7 Dəstək</li>
+        </ul>
+        <button class="btn-select3" onclick="selectPackaget('Premium')">Seç</button>
+      </div>
+    </div>
+  
+    <div class="package-selected">
+      <h3>Seçdiyiniz Paket:</h3>
+      <p id="selected-package">Heç bir paket seçilməyib.</p>
+      <a id="contact-button" href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
+
+    </div>
+  </div>
+
+  
+
+
+
+<footer>
+    <div class="footer">
+         <div class="footer-list">
+
+        <div class="footer-card1">
+        <h2>Web Craft</h2>
+        <ul>
+             <li>Ana səhifə</li>
+             <li>Haqqımızda</li>
+             <li>Portfolio</li>
+             <li>Bloq</li>
+             <li>Xidmətlərimiz</li>
+        </ul>
+    </div>
+        
+        <div class="footer-card1" id="footer-card2"> 
+        <h2>Həllər</h2>
+        <ul>
+             <li>Vebsaytların hazırlanması</li>
+             <li>Vebsaytların texniki dəstək</li>
+             <li>Korporotiv mail</li>
+             <li>Logo yaradılması</li>
+             <li>Ödəmə sistemlərinin inteqrasiyası</li>
+        </ul>
+        </div>
+        <div class="footer-card1" id="footer-card2"> 
+            <h2>Təkliflərimiz</h2>
+            <ul>
+                 <li>Peşəkar Komanda</li>
+                 <li>Unikal Dizayn</li>
+                 <li>Əlçatan Qiymətlər</li>
+                 <li>Mobil Uyğunluq</li>
+                 <li>Texniki Dəstək</li>
+            </ul>
+            </div>
+
+        <div class="footer-contact1">
+         <div class="telephone"> <img src="./demo-img/Location.png"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
+         <div class="location">  <img src="./demo-img/Telephone.png"> <h2>(050) 500 50 50</h2></div>
+        </div>
+         </div>
+
+</footer> 
+
+<script src="demo-app.js"></script>
+</body>
+</html>
