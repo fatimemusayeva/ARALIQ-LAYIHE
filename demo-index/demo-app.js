@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded', () => {
     function choosePackage(packageName) {
         const selectedPackageElement = document.getElementById('selected-package');
@@ -119,7 +118,7 @@ document.querySelector('.search-btn').addEventListener('click', async () => {
     const fullDomain = domainName + extension;
     const resultElement = document.getElementById('result');
 
-    const apiUrl = `https://domain-availability.whoisxmlapi.com/api/v1?apiKey=at_2FSxUYSKbnCBw7OkSpI4juwPgqvF5&domainName=${fullDomain}&credits=DA`;
+    const apiUrl = `https://domain-availability.whoisxmlapi.com/api/v1?apiKey=at_skWV5ofalUZ1H3YU1hBAC1NhEHUmx&domainName=${fullDomain}&credits=DA`;
 
     try {
         const response = await fetch(apiUrl);
