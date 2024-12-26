@@ -283,6 +283,9 @@ justify-content: center;
 #footer-card2{
     margin-left: 8%;
 }
+#footer-card3{
+    margin-left: 8%;
+}
 .footer-card1 h2{
     color: white;
     margin-bottom: 20px;
@@ -535,6 +538,8 @@ font-size: 1em;
     .logo {
         margin-right: 26%;
         font-size: 1em;
+        margin-top: 20px;
+
     }
     .header-menu a {
         margin-left: 2%;
@@ -754,10 +759,27 @@ width: 270px;
       margin-left: 20%;
       margin-top: 40px;
         }
+#footer-card3{
+    width: 270px;
+      margin-left: 20%;
+      margin-top: 40px;
+        }
 .footer-contact1{
     margin-top: 40px;
     width: 270px;
     margin-left: 15%;    }
+    
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 85%;
+    }
+
 
 }
 
@@ -780,23 +802,13 @@ width: 270px;
         margin-left: 5%;
     }
     #footer-card2 {
-        margin-left: 15%;
+        margin-left: 16%;
+    }
+    #footer-card3 {
+        margin-left: 16%;
     }
 }
 
-
-@media (max-width: 600px) {
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .contact-info,
-    .contact-form {
-        width: 85%;
-    }
-}
 
 
 #google-map {

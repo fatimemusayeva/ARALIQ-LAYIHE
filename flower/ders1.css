@@ -1,0 +1,226 @@
+
+.dropbtn {
+    background-color:white; /* Yeşil arka plan rengi */
+    color: black; /* Beyaz metin rengi */
+    padding: 16px; /* İç boşluk */
+    font-size: 16px; /* Yazı büyüklüğü */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* Fare işareti tıklanabilir gösterir */
+    width: 120px;
+ margin-left: 45px;
+}
+
+.dropdown {
+    position: relative; /* Konum ayarları */
+    display: inline-block; /* Yan yana konumlandırma */
+}
+
+.dropdown-content {
+    margin-left: 45px;
+    display: none; /* Varsayılan olarak gizli */
+    position: absolute; /* Konumlandırma */
+    background-color: #f9f9f9; /* Açılır menü arka plan rengi */
+    min-width: 120px; /* Menü genişliği */
+    box-shadow: lightgrey; /* Gölgelendirme */
+    z-index: 1; /* Üstte görünmesini sağlar */
+}
+
+.dropdown-content a {
+    color: black; /* Metin rengi */
+    padding: 12px 16px; /* İç boşluk */
+    text-decoration: none; /* Alt çizgi yok */
+    display: block; /* Tam genişlikte gösterir */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Hover rengi */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Hover durumunda menüyü gösterir */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightgrey; /* Hover durumunda buton rengini değiştirir */
+}
+.no1{
+    width: 100%;
+    height:50px;
+        background-color: #FFFFFF;
+    text-decoration: none;
+display: inline-block;}
+
+.button1{
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    margin-left: 150px;
+    background-color: white;
+    font-size: 23px;
+    font-family:cursive;
+    display: inline;
+}
+#button2{
+    margin-left: 120px;
+}
+.buton2{
+    height: 50px;
+    width: 100px;
+    margin-left: 45px;
+    background-color: #FFFFFF;
+    border-color: white;
+    font-size: 18px;
+    font-family:monospace;
+    display: inline;
+ text-decoration: none;
+}
+.buton3{
+     text-decoration: none;
+    height: 35px;
+    width: 130px;
+    background-color:#878787 ;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 45px;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 8px;
+}
+#text1{
+    font-size:55px;
+    margin-left: 140px;
+    margin-top: 90px;
+    display: inline-block;
+    position: relative;
+}
+#text2{
+    font-size:25px;
+    margin-left: 140px;
+    position: relative;
+padding-top:-130px;
+color: rgb(239, 71, 45);
+}
+#foto2{
+position: absolute;
+margin-top: 35px;
+background-size: cover;
+width:500px;
+height: 500px;
+margin-left: 850px;
+ }
+#button-gri{
+  width:150px;
+  height: 38px;
+  background-color:red;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    border-radius: 5px;
+   display: inline-block;
+   text-decoration: none;
+   justify-content: center;
+   margin-left: 145px;
+   padding-top:10px;
+   padding-left: 9px;
+
+}
+
+#button-gri:hover {
+    background-color: white;
+    color:rgb(75, 70, 70);
+    border:2px solid rgb(75, 70, 70) ;
+}
+#button-white{
+    width:150px;
+    height: 35px;
+    background-color:white;
+      color: rgb(75, 70, 70);
+      font-size: 16px;
+      position: absolute;
+      border-radius: 5px;
+     display: inline-block;
+     text-decoration: none;
+     justify-content: center;
+     margin-left: 350px;
+     padding-top:10px;
+     padding-left: 9px;
+     border:2px solid rgb(75, 70, 70)
+  
+  }
+  
+  #button-white:hover {
+      background-color:rgb(255, 47, 137);
+      color:white;
+      border: none;
+  }
+  #foto-flower1{
+    background-image: url(https://i.pinimg.com/originals/b7/79/88/b779882397bc5b8a37ede3863fc40449.jpg);
+width:760px;
+height: 400px;
+margin-top: 200px;
+display: inline-block;
+position: absolute;
+background-size: cover;
+
+  }
+  #foto-flower2{
+    background-image: url(https://i.pinimg.com/564x/f1/00/a6/f100a6ca8cfdbd7a53486c7da8b3851a.jpg);
+width:760px;
+height: 400px;
+margin-top: 200px;
+display: inline-block;
+position: absolute;
+background-size: cover;
+margin-left: 755px;
+  }
+  #button-black1{
+    width:350px;
+    height: 55px;
+    background-color:rgba(30, 153, 235, 0.915);
+      color:#ffffff;
+      font-size: 30px;
+      position:absolute;
+      border-radius: 30px;
+     display: inline-block;
+     margin-top:320px;
+     text-decoration: none;
+     justify-content: center;
+     padding-top:10px;
+     padding-left: 9px;
+     border:2px solid white;
+     margin-left:150px;
+    
+  
+  }
+  #button-black2{
+    width:350px;
+    height: 55px;
+    background-color:rgb(251, 159, 174);
+      color:white;
+      font-size: 30px;
+      position: absolute;
+      border-radius: 30px;
+     display: inline-block;
+     text-decoration: none;
+     justify-content: center;
+     padding-top:10px;
+     padding-left: 9px;
+     border:2px solid white;
+     margin-left: 900px;
+     margin-top: 320px;
+    }
+#icon1{
+    margin-top: 420px;
+   color:rgba(30, 153, 235, 0.915);
+   position: absolute;
+   margin-left: 200px;
+   font-size:20px;
+}
+#icon2{
+    margin-top: 420px;
+   color:rgb(251, 159, 174);
+   position: absolute;
+   margin-left: 1000px;
+   font-size:20px;
+}

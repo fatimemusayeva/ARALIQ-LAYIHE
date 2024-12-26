@@ -184,14 +184,15 @@ const opinionItems = opinions.innerHTML;
 opinions.innerHTML += opinionItems; 
 
 
-function toggleMenu() {
+let toggleMenu=document.querySelector(".burger-menu")
+toggleMenu.addEventListener("click",()=>{
   var mobileMenu = document.getElementById("mobile-menu");
   if (mobileMenu.style.display === "block") {
       mobileMenu.style.display = "none";
   } else {
       mobileMenu.style.display = "block";
   }
-}
+})
 
 
 

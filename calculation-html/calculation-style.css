@@ -293,7 +293,7 @@
     height: 8px;
     background: #E0E0E0;
     border-radius: 10px;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     outline: none;
     cursor: pointer;
 }
@@ -677,12 +677,18 @@ font-size: 1em;
     .logo {
         margin-right: 26%;
         font-size: 1em;
+        margin-top: 20px;
+
     }
     .header-menu a {
         margin-left: 2%;
     }
 
 }
+
+
+
+
 
 @media (min-width: 300px) and (max-width: 600px) {
     .calculator1 , .calculator2 {
@@ -699,12 +705,6 @@ font-size: 1em;
     .header-2 img{
         display: none;
     }
-}
-
-
-
-
-@media (min-width: 300px) and (max-width: 600px) {
     .burger-menu {
         display: none;
         font-size: 2em;
@@ -851,6 +851,11 @@ width: 270px;
       margin-left: 20%;
       margin-top: 50px;
         }
+#footer-card3{
+    width: 270px;
+      margin-left: 20%;
+      margin-top: 50px;
+        }
 .footer-contact1{
     margin-top: 50px;
     width: 270px;
@@ -873,6 +878,9 @@ width: 270px;
         margin-left: 5%;
     }
     #footer-card2 {
-        margin-left: 15%;
+        margin-left: 16%;
+    }
+    #footer-card3 {
+        margin-left: 16%;
     }
 }

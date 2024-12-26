@@ -218,7 +218,6 @@ color: white;
     font-size: 1.5em;
     margin-bottom: 10px;
     text-align: center;
-    margin-top: 30px;
 }
 
 .notification p {
@@ -911,6 +910,7 @@ font-size: 1em;
     .logo {
         margin-right: 26%;
         font-size: 1em;
+        margin-top: 20px;
     }
     .header-menu a {
         margin-left: 2%;
@@ -1121,37 +1121,28 @@ width: 270px;
       margin-left: 20%;
       margin-top: 50px;
         }
+#footer-card3{
+    width: 270px;
+      margin-left: 20%;
+      margin-top: 50px;
+        }
 .footer-contact1{
     margin-top: 50px;
     width: 270px;
     margin-left: 15%;    }
+    .pricing-box {
+        gap: 10px;
+      }
+    
+      .pricing-option {
+        min-width: 100%;
+      }
 
 }
 
 
 
-/* 
- 
-  @media (max-width: 300px) {
-    .pricing-box {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .pricing-option {
-      min-width: 100%;
-    }
-  }
-   */
-  @media (max-width: 600px) {
-    .pricing-box {
-      gap: 10px;
-    }
-  
-    .pricing-option {
-      min-width: 100%;
-    }
-  }
+
   
   @media (min-width: 1024px) and (max-width: 2000px) {
     .pricing-box {
@@ -1213,6 +1204,9 @@ width: 270px;
         margin-left: 5%;
     }
     #footer-card2 {
+        margin-left: 15%;
+    }
+    #footer-card3 {
         margin-left: 15%;
     }
 }

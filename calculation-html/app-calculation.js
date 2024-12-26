@@ -1,12 +1,12 @@
-function toggleMenu() {
-    var mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenu.style.display === "block") {
-        mobileMenu.style.display = "none";
-    } else {
-        mobileMenu.style.display = "block";
-    }
+let toggleMenu=document.querySelector(".burger-menu")
+toggleMenu.addEventListener("click",()=>{
+  var mobileMenu = document.getElementById("mobile-menu");
+  if (mobileMenu.style.display === "block") {
+      mobileMenu.style.display = "none";
+  } else {
+      mobileMenu.style.display = "block";
   }
-  
+})
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
         totalCostDisplay.textContent = `${totalCost} ₼`;
     }
 
-    // Event listeners
     pageCountSlider.addEventListener("input", calculateTotalCost);
     designComplexitySlider.addEventListener("input", calculateTotalCost);
     addons.forEach((addon) => addon.addEventListener("change", calculateTotalCost));
@@ -84,17 +83,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const ecommerceAddons = document.querySelectorAll(".ecommerce-addon");
     ecommerceAddons.forEach((addon) => addon.addEventListener("change", calculateTotalCost));
 
-    // Initialize the cost calculation
     calculateTotalCost();
 });
 
-
-// Qeydiyyat formunu göstərmək
-function showForm() {
-    document.getElementById('registration-form').style.display = 'flex';  // Formu göstər
-}
-
-// Qeydiyyat formunu bağlamaq
-function closeForm() {
-    document.getElementById('registration-form').style.display = 'none';  // Formu gizlət
-}
+let showForm=document.querySelector(".order-button")
+showForm.addEventListener("click",()=>{
+    document.getElementById('registration-form').style.display = 'flex';  
+})
+let closeForm=document.querySelector(".close-button")
+closeForm.addEventListener("click",()=>{
+    document.getElementById('registration-form').style.display = 'none';  
+})

@@ -397,7 +397,7 @@ color: #074c90;
 .stars{
 display: flex;
 gap:2%;
-margin-top: 10px;
+margin-top: 20px;
 justify-content: center;      
 }
 .stars img{
@@ -851,6 +851,7 @@ font-size:1.1em;
    .logo {
 margin-right: 20%;
 font-size: 1em;
+margin-top: 20px;
 
 }
              
@@ -941,6 +942,9 @@ font-size: 1em;
 }
  
 @media (min-width: 600px) and (max-width: 990px) {
+    .stars {
+margin-top: 30px;
+    }
     .footer-list {
         flex-wrap: wrap;
         height: 500px;
@@ -952,12 +956,15 @@ font-size: 1em;
     #footer-card2 {
         margin-left: 15%;
     }
+    #footer-card3 {
+        margin-left: 16%;
+    }
     .comment-card {
         flex-wrap: wrap;
     }
     .comment-card img {
         margin-top: 20px;
-        height: 200px;
+        height:300px;
         width: 80%;
     }
     .comment-card h2 {
@@ -970,6 +977,7 @@ font-size: 1em;
     }
     .header2-card img {
         width: 80%;
+        height: 300px;
         margin-bottom: 50px;
     }
 }
@@ -980,6 +988,11 @@ font-size: 1em;
 
 
 @media (max-width: 600px) {
+    #footer-card3 {
+        width: 270px;
+        margin-left: 20%;
+        margin-top: 0px;
+    }
     .workers-about h2 {
         font-size: 2em
     }
@@ -1234,6 +1247,7 @@ font-size:0.9em;
   .opinion h2 {
     font-size: 1.2em;
   }
+  
 
   .section-serviceIMG-title{
     font-size: 2em;

@@ -18,7 +18,7 @@
             <a class="menu" href="../calculation-html/calculation-index.html">Qiymət təklifi al</a>
            <div id="price"> <a  href="../contact-html/index-contact.html">Əlaqə</a></div>
 
-           <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
+           <div class="burger-menu" id="burger-menu" >
             &#9776;
         </div>
     </div>
@@ -37,7 +37,9 @@
 
         </header>
         
+<main>
 
+    <section>
 <div class="container">
     <h1 class="title">"Domen Adınızı Buradan Sifariş Edin və Onlayn Varlığınızı Qurun!"</h1>
     <p class="description">
@@ -61,7 +63,7 @@
             <option value=".biz">.biz</option>
             <option value=".us">.us</option>
         </select>
-        <button class="search-btn" onclick="searchDomain()">Axtar</button>
+        <button class="search-btn">Axtar</button>
     </div>
     
     <div id="result"></div>
@@ -73,13 +75,13 @@
         <p id="selected-domain"></p>
         <p id="total-price"></p>
         <p id="expiry-date"></p>
-        <a id="contact-button" href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
+        <a href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
         
     </div>
     
 
 
-     
+    
 
     <div class="popular-domains">
         <span>.az <span class="price">₼40/il</span></span>
@@ -90,14 +92,14 @@
         <span>.org <span class="price">₼40/il</span></span>
     </div>
 
-    <div id="result" class="notification"></div>
+    <div class="notification"></div>
 
 </div>
 
 
+</section>
 
-
-
+<section>
 <div class="faq-container">
     <h2 class="faq-header">Domen Haqqında Tez-tez Verilən Suallar</h2>
 
@@ -138,10 +140,11 @@
         </div>
     </div>
 </div>
+</section>
 
 
 
-
+<section>
 
 <div class="pricing-container">
     <h2 class="pricing-header">Domen Qiymətləri və Paket Təklifləri</h2>
@@ -156,7 +159,7 @@
           <li>1 İstifadəçi</li>
           <li>DNS Dəstəyi</li>
         </ul>
-        <button class="btn-select1" onclick="selectPackaget('Basic')">Seç</button>
+        <button class="btn-select1">Seç</button>
       </div>
   
       <div class="pricing-option" id="standard">
@@ -169,7 +172,7 @@
           <li>DNS Dəstəyi</li>
           <li>SSL Sertifikatı</li>
         </ul>
-        <button class="btn-select2" onclick="selectPackaget('Standard')">Seç</button>
+        <button class="btn-select2" >Seç</button>
       </div>
   
       <div class="pricing-option" id="premium">
@@ -183,21 +186,21 @@
           <li>SSL Sertifikatı</li>
           <li>24/7 Dəstək</li>
         </ul>
-        <button class="btn-select3" onclick="selectPackaget('Premium')">Seç</button>
+        <button class="btn-select3">Seç</button>
       </div>
     </div>
   
     <div class="package-selected">
       <h3>Seçdiyiniz Paket:</h3>
       <p id="selected-package">Heç bir paket seçilməyib.</p>
-      <a id="contact-button" href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
+      <a href="../contact-html/index-contact.html" class="btn-contact" >Paketi əldə et</a>
 
     </div>
   </div>
 
   
-
-
+</section>
+</main>
 
 <footer>
     <div class="footer">
@@ -224,7 +227,7 @@
              <li>Ödəmə sistemlərinin inteqrasiyası</li>
         </ul>
         </div>
-        <div class="footer-card1" id="footer-card2"> 
+        <div class="footer-card1" id="footer-card3"> 
             <h2>Təkliflərimiz</h2>
             <ul>
                  <li>Peşəkar Komanda</li>
@@ -236,10 +239,11 @@
             </div>
 
         <div class="footer-contact1">
-         <div class="telephone"> <img src="./demo-img/Location.png"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
-         <div class="location">  <img src="./demo-img/Telephone.png"> <h2>(050) 500 50 50</h2></div>
+         <div class="telephone"> <img src="./demo-img/Location.png"  alt="foto"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
+         <div class="location">  <img src="./demo-img/Telephone.png" alt="foto"> <h2>(050) 500 50 50</h2></div>
         </div>
          </div>
+    </div>
 
 </footer> 
 

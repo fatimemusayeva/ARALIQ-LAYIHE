@@ -17,7 +17,7 @@
             <a class="menu" href="../calculation-html/calculation-index.html">Qiymət təklifi al</a>
            <div id="price"> <a  href="../contact-html/index-contact.html">Əlaqə</a></div>
 
-           <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
+           <div class="burger-menu" id="burger-menu" >
             &#9776;
         </div>
     </div>
@@ -40,7 +40,7 @@
                 <p>Portfolio bölməsində komandamızın yaratdığı seçilmiş layihələri təqdim edirik. Bu, gördüyümüz işlərin keyfiyyəti, yenilikçi yanaşmamız və
                      müştərilərimizin uğur hekayələrini əks etdirir. Fərdi biznes ehtiyaclarınıza uyğun həllər təqdim edərək, uğurlu layihələrin təməlini qururuq.</p>
                 </div>
-                    <img src="./portfolio-img/female-web-designer-taking-notes-office.jpg">
+                    <img src="./portfolio-img/female-web-designer-taking-notes-office.jpg" alt="img">
             </div>
         </div>
 
@@ -57,32 +57,32 @@
                     <div class="portfolio-card">
                         <img src="./portfolio-img/z-img.png" alt="Layihə 1 şəkli">
                         <p>ZetaNet</p>
-                        <a href="https://example1.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <a href="https://bagirovazehra.github.io/Final/" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                     <div class="portfolio-card">
-                        <img src="./portfolio-img/g-img.jpg" alt="Layihə 2 şəkli">
-                        <p>My Folio</p>
-                        <a href="https://example2.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <img src="./portfolio-img/EkranGörüntüsü(425).png" alt="Layihə 2 şəkli">
+                        <p>Bir sayt</p>
+                        <a href="../birsayt/birsaytaz.html" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                     <div class="portfolio-card">
-                        <img src="portfolio-img/a-img.jpg" alt="Layihə 3 şəkli">
-                        <p>Panda Trail</p>
-                        <a href="https://example3.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <img src="./portfolio-img/a-img.jpg" alt="Layihə 3 şəkli">
+                        <p>PandaTrail</p>
+                        <a href="https://aytacqadirzada.github.io/final-project/" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                     <div class="portfolio-card">
                         <img src="portfolio-img/art-seed1.png" alt="Layihə 4 şəkli">
                         <p>ART SEEDS</p>
-                        <a href="https://example4.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <a href="../artseed/ArtSeedToxum.html" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                     <div class="portfolio-card">
                         <img src="./portfolio-img/EkranGörüntüsü(412).png" alt="Layihə 5 şəkli">
                         <p>Lotus Beauty</p>
-                        <a href="https://example5.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <a href="../flower/ders1.html" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                     <div class="portfolio-card">
                         <img src="./portfolio-img/EkranGörüntüsü(410).png" alt="Layihə 6 şəkli">
                         <p>Elixir</p>
-                        <a href="https://example6.com" target="_blank" class="portfolio-btn">Layihəni Gör</a>
+                        <a href="../layihe1/index.html" target="_blank" class="portfolio-btn">Layihəni Gör</a>
                     </div>
                 </div>
             </div>
@@ -122,6 +122,28 @@
                 </div>
             </div>
         </section>
+
+       <section>
+            <div id="sitePlan">
+                <h2>Sayt İnkişaf Planı</h2>
+                <p class="planTitle">Sayt növünü seçin</p>
+                <select id="siteType">
+                  <option value="simple">Sadə Sayt</option>
+                  <option value="complex">Kompleks Sayt</option>
+                  <option value="ecommerce">E-ticarət Saytı</option>
+                  <option value="education">Təhsil Saytı</option>
+                  <option value="blog">Blog Saytı</option>
+                  <option value="health">Sağlamlıq Saytı</option>
+                  <option value="tourism">Turizm Saytı</option>
+                  <option value="restaurant">Restoran Saytı</option>
+                </select>
+            
+                <button id="showPlan">Planı Göstər</button>
+            
+                <div id="planResult">
+                </div>
+              </div>
+        </section>
             
             <section>
             <div class="review-section">
@@ -140,7 +162,7 @@
             
                 <textarea id="review-input" class="review-input" placeholder="Rəyinizi buraya yazın..."></textarea>
             
-                <button class="submit-btn" onclick="submitReview()">Göndər</button>
+                <button class="submit-btn">Göndər</button>
             </div>
             
                 <div id="success-message" class="success-message">Rəyiniz uğurla göndərildi!</div> 
@@ -175,7 +197,7 @@
              <li>Ödəmə sistemlərinin inteqrasiyası</li>
         </ul>
         </div>
-        <div class="footer-card1" id="footer-card2"> 
+        <div class="footer-card1" id="footer-card3"> 
             <h2>Təkliflərimiz</h2>
             <ul>
                  <li>Peşəkar Komanda</li>
@@ -187,24 +209,16 @@
             </div>
 
         <div class="footer-contact1">
-         <div class="telephone"> <img src="./portfolio-img/Location.png"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
-         <div class="location">  <img src="./portfolio-img/Telephone.png"> <h2>(050) 500 50 50</h2></div>
+         <div class="telephone"> <img src="./portfolio-img/Location.png" alt="foto"> <h2>H.Zeynalabdin Tağıyev 63</h2></div> 
+         <div class="location">  <img src="./portfolio-img/Telephone.png" alt="foto"> <h2>(050) 500 50 50</h2></div>
         </div>
 
 
 
-      </div>
-
-
-        <div></div>
-        
+      </div>    
     </div>
 </footer> 
 <script src="app-portfolio.js"></script>
-
-
-
-
 
         </body>
         </html>
